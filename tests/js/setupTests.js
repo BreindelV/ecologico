@@ -18,3 +18,6 @@ class LocalStorageMock {
   }
 }
 global.localStorage = new LocalStorageMock();
+
+// Simula global.alert para evitar errores
+global.alert = jest.fn();
